@@ -1,5 +1,7 @@
 # MCP Hub
 
+[![CI](https://github.com/fgbm/bb-plugin-mcp-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/fgbm/bb-plugin-mcp-hub/actions/workflows/ci.yml)
+
 One source of truth for MCP servers, rendered into the files each coding
 harness already reads. Host scope and project scope, with secrets kept out of
 version control.
