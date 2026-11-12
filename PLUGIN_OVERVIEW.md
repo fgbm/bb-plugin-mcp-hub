@@ -53,13 +53,11 @@ host rather than from the bb server.
 
 ## What each harness gets
 
-| Harness | File |
-| --- | --- |
-| Kimi Code | `~/.kimi-code/mcp.json`, project `.mcp.json` |
-| Claude Code | project `.mcp.json`, `~/.bb/mcp/export/claude-user-mcp.json` |
-| OpenCode | `~/.bb/mcp/opencode.json` (v2 shape), project `.bb/mcp/opencode.json` |
-| Cursor | `~/.bb/mcp/export/cursor-mcp.json` |
-| Codex | `~/.bb/mcp/export/codex-config.toml` |
+- Kimi Code: `~/.kimi-code/mcp.json` and the project `.mcp.json`.
+- Claude Code: the project `.mcp.json` and `~/.bb/mcp/export/claude-user-mcp.json`.
+- OpenCode: `~/.bb/mcp/opencode.json` in the v2 shape, and a project file under `.bb/mcp/`.
+- Cursor: `~/.bb/mcp/export/cursor-mcp.json`.
+- Codex: `~/.bb/mcp/export/codex-config.toml`.
 
 Claude Code user scope lives in `~/.claude.json`, which also holds session state,
 so MCP Hub writes an export instead of merging. Cursor and Codex exports are
