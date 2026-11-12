@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "type": "module",
   "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
   "engines": {
     "bb": ">=0.49",
     "bbPluginSdk": ">=0.6.132"
@@ -11,28 +15,46 @@
     "name": "MCP Hub",
     "description": "One host-level and project-level source of truth for MCP servers, materialized into Kimi Code, Claude Code, OpenCode, Cursor and Codex.",
     "branding": {
-      "icon": "Plug"
+      "icon": "./assets/mcp.svg",
+      "experimental_icons": {
+        "mcp": "./assets/mcp.svg"
+      }
     },
     "server": "./server.ts",
     "host": "./host.ts",
+    "app": "./app.tsx",
     "skills": [
       "skills"
     ]
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.1.17",
+    "@radix-ui/react-separator": "^1.2.0",
+    "@radix-ui/react-slot": "^1.5.0",
+    "@radix-ui/react-switch": "^1.4.1",
+    "@radix-ui/react-tabs": "^1.2.1",
     "zod": "^4.6.5"
   },
   "devDependencies": {
     "@get-bb/plugin-sdk": "0.6.132",
+    "@radix-ui/react-dialog": "^1.3.1",
+    "@radix-ui/react-popover": "^1.3.1",
+    "@radix-ui/react-select": "^2.4.1",
     "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^22.0.0",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "@vitest/coverage-v8": "^5.1.0",
     "better-sqlite3": "^12.11.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "cron-parser": "^5.10.4",
     "hono": "^4.13.18",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "typescript": "^5.7.0"
+    "sonner": "^1.7.4",
+    "tailwind-merge": "^3.7.0",
+    "typescript": "^5.7.0",
+    "vitest": "^5.1.0"
   }
 }
